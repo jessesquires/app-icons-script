@@ -4,6 +4,8 @@ Photoshop script to generate all iOS App Icon PNGs
 
 Make one 1024x1024 App Icon, let this script [automate](http://xkcd.com/1319/) the rest.
 
+Generated PNGs are named with the following scheme: `Icon-<size><density>.png`, for example `Icon-60@2x.png`.
+
 ## Installation
 
 **Open `Terminal.app` and type the following like a badass:**
@@ -23,6 +25,10 @@ $ ./install.sh
 2. Select File > Scripts > Create-iOS-icons
 3. Follow the dialog prompts
 4. :tada: :beer:
+
+## Warnings
+
+This script does not handle naming collisions, it will overwrite any existing files with the same names in the destination directory.
 
 ## Documentation
 
