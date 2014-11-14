@@ -26,7 +26,7 @@ $ ./install.sh
 3. Follow the dialog prompts
 4. :tada: :beer:
 
-## Warnings
+## Warning!
 
 This script does not handle naming collisions, it will overwrite any existing files with the same names in the destination directory.
 
