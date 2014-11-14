@@ -4,12 +4,12 @@ Photoshop script to generate all iOS icon PNGs
 
 ## Installation
 
-Do some manual shit:
+**Do some manual shit:**
 
 1. Download script
 2. Copy `Create-iOS-icons.jsx` to `/Applications/Adobe Photoshop CC 2014/Presets/Scripts/`
 
-Or open `Terminal.app` and type the following like a badass:
+**Or open `Terminal.app` and type the following like a badass:**
 ```bash
 $ git clone https://github.com/jessesquires/iOS-icons-script.git
 $ cd iOS-icons-script/
