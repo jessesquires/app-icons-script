@@ -1,6 +1,8 @@
 # iOS-icons-script
 
-Photoshop script to generate all iOS icon PNGs
+Photoshop script to generate all iOS App Icon PNGs
+
+Make one 1024x1024 App Icon, let this script [automate](http://xkcd.com/1319/) the rest.
 
 ## Installation
 
@@ -22,6 +24,12 @@ $ ./install.sh
 2. Select File > Scripts > Create-iOS-icons
 3. Follow the dialog prompts
 4. :tada: :beer:
+
+## Documentation
+
+* Adobe [Photoshop JavaScript Reference](http://www.adobe.com/devnet/photoshop/scripting.html)
+
+* Apple iOS Human Interface Guidelines, [Icon and Image Sizes](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/IconMatrix.html)
 
 ## Credits
 
