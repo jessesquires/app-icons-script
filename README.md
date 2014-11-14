@@ -12,7 +12,7 @@ $ ./install.sh
 
 ## Usage
 
-1. Open Photoshop (may require restart)
+1. Open Photoshop (may require restart if open during install)
 2. Select File > Scripts > Create-iOS-icons
 3. Follow the dialog prompts
 4. :beer:
