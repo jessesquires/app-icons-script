@@ -4,7 +4,7 @@
 
 Make one 1024x1024 App Icon, let this script [automate](http://xkcd.com/1319/) the rest.
 
-Generated PNGs are named with the following scheme: `Icon-<size><density>.png`, for example `Icon-60@2x.png`.
+This script will create all of your app icon images from a single 1024x1024 "iTunesArtwork" PNG. It saves icons in **PNG-24** using *Save For Web* and removes metadata. The generated PNGs are named with the following scheme: `Icon-<size><density>.png`, for example `Icon-60@2x.png`.
 
 ## Installation
 
