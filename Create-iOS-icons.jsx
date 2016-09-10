@@ -4,7 +4,7 @@
 
 	See included README and LICENSE for details.
 
-	Modifications 
+	Modifications
 		Copyright (c) 2014 Jesse Squires
 		Copyright (c) 2012 Josh Jones
 
@@ -20,7 +20,7 @@ var initialPrefs = app.preferences.rulerUnits;
 function main() {
 	//	prompt user to select source file, cancel returns null
 	var sourceFile = File.openDialog("Select a 1:1 sqaure PNG file that is at least 1024x1024.", "*.png", false);
-	if (sourceFile == null)  { 
+	if (sourceFile == null)  {
 		// user canceled
 		return;
 	}
@@ -55,40 +55,44 @@ function main() {
 
 	//	delete metadata
 	doc.info = null;
-	
+
 	var icons = [
 		{"name": "iTunesArtwork@2x", "size":1024},
 		{"name": "iTunesArtwork", "size":512},
-		
+
 		{"name": "Icon-29", "size":29},
 		{"name": "Icon-29@2x", "size":58},
 		{"name": "Icon-29@3x", "size":87},
-		
+
+        {"name": "Icon-20", "size":20},
+        {"name": "Icon-20@2x", "size":40},
+        {"name": "Icon-20@3x", "size":60},
+
 		{"name": "Icon-40", "size":40},
 		{"name": "Icon-40@2x", "size":80},
 		{"name": "Icon-40@3x", "size":120},
-		
+
 		{"name": "Icon-50", "size":50},
 		{"name": "Icon-50@2x", "size":100},
-		
+
 		{"name": "Icon-57", "size":57},
 		{"name": "Icon-57@2x", "size":114},
-		
+
 		{"name": "Icon-60@2x", "size":120},
 		{"name": "Icon-60@3x", "size":180},
 
 		{"name": "Icon-72", "size":72},
 		{"name": "Icon-72@2x", "size":144},
-		
+
 		{"name": "Icon-76", "size":76},
 		{"name": "Icon-76@2x", "size":152},
-		
+
 		{"name": "Icon-120", "size":120},
-        
+
 		{"name": "Icon-83-5@2x", "size":167},
 	];
 
-	var initialState = doc.activeHistoryState; 
+	var initialState = doc.activeHistoryState;
 
 	for (var i = 0; i < icons.length; i++) {
 		var eachIcon = icons[i];
@@ -111,7 +115,7 @@ function main() {
 	alert("Success!\nAll iOS icons created and saved. Fuck yeah. 🎉 🍺");
 
 	doc.close(SaveOptions.DONOTSAVECHANGES);
-	
+
 	restorePrefs();
 }
 
