@@ -6,9 +6,14 @@ Make one 1024x1024 App Icon, let this script [automate](http://xkcd.com/1319/) t
 
 This script will create all of your app icon images from a single 1024x1024 "iTunesArtwork" PNG. It saves icons in **PNG-24** using *Save For Web* and removes metadata. The generated PNGs are named with the following scheme: `Icon-<size><density>.png`, for example `Icon-60@2x.png`.
 
+> 💡 **Note:** 
+>
+> These instructions (and install script) are for **Photoshop CC 2014**. 
+>
+> For a different version, simply edit the script.
+
 ## Installation
 
-**Open `Terminal.app` and type the following like a badass:**
 ```bash
 $ git clone https://github.com/jessesquires/app-icons-script.git
 $ cd app-icons-script/
@@ -22,7 +27,7 @@ $ ./install.sh
 3. Follow the dialog prompts
 4. :tada: :beer:
 
-## Warning! :warning:
+## :warning: Warning! :warning:
 
 This script **does not handle naming collisions**, it will overwrite any existing files with the same names in the destination directory.
 
