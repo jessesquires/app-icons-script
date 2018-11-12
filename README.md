@@ -14,10 +14,6 @@ $ git clone https://github.com/jessesquires/app-icons-script.git
 $ cd app-icons-script/
 $ ./install.sh
 ```
-**Or, do some manual shit:**
-
-1. Download script
-2. Copy `*.jsx` to `/Applications/Adobe Photoshop CC 2014/Presets/Scripts/`
 
 ## Usage
 
