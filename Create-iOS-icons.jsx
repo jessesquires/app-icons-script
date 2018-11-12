@@ -1,6 +1,6 @@
 /*
-	Photoshop script to generate all iOS App Icon PNGs
-	https://github.com/jessesquires/iOS-icons-script
+	Photoshop script to generate all iOS app icon PNGs
+	https://github.com/jessesquires/app-icons-script
 
 	See included README and LICENSE for details.
 
@@ -57,8 +57,8 @@ function main() {
 	doc.info = null;
 
 	var icons = [
-		{"name": "iTunesArtwork@2x", "size":1024},
-		{"name": "iTunesArtwork", "size":512},
+		{"name": "Icon-1024", "size":1024},
+		{"name": "Icon-512", "size":512},
 
 		{"name": "Icon-29", "size":29},
 		{"name": "Icon-29@2x", "size":58},
@@ -100,11 +100,6 @@ function main() {
 		doc.resizeImage(eachIcon.size, eachIcon.size, null, ResampleMethod.BICUBICSHARPER);
 
 		var destFileName = eachIcon.name + ".png";
-
-		if (eachIcon.name == "iTunesArtwork@2x" || eachIcon.name == "iTunesArtwork") {
-			// iTunesArtwork files don't have an extension
-			destFileName = eachIcon.name;
-		}
 
 		doc.exportDocument(new File(destFolder + "/" + destFileName), ExportType.SAVEFORWEB, saveForWeb);
 
