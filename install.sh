@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo 'Copying scripts to /Applications/Adobe Photoshop CC 2014/Preset/Scripts/....'
+VERSION=2019
 
-cp *.jsx /Applications/Adobe\ Photoshop\ CC\ 2014/Presets/Scripts/
+echo "Copying scripts to /Applications/Adobe Photoshop CC $VERSION/Preset/Scripts/...."
 
-echo 'Done! 🎉'
+cp *.jsx /Applications/Adobe\ Photoshop\ CC\ $VERSION/Presets/Scripts/
+
+echo "Done! 🎉"
