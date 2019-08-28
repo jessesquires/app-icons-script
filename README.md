@@ -1,6 +1,6 @@
 # app-icons-script
 
-*Photoshop script to generate all iOS and macOS app icon PNGs*
+*Photoshop script to generate all iOS and macOS app icons*
 
 Make one 1024x1024 App Icon, let this script [automate](http://xkcd.com/1319/) the rest.
 
@@ -8,22 +8,22 @@ This script will create all of your app icon images from a single 1024x1024 "iTu
 
 > 💡 **Note:** 
 >
-> These instructions (and install script) are for **Photoshop CC 2014**. 
+> These instructions (and install script) are for **Photoshop CC 2019**. 
 >
-> For a different version, simply edit the script.
+> For a different version, simply edit the `VERSION` [variable in the script](https://github.com/jessesquires/app-icons-script/blob/master/install.sh#L3).
 
 ## Installation
 
 ```bash
 $ git clone https://github.com/jessesquires/app-icons-script.git
 $ cd app-icons-script/
-$ ./install.sh
+$ [sudo] ./install.sh
 ```
 
 ## Usage
 
-1. Open Photoshop CC 2014 (may require restart if open during install)
-2. Select File > Scripts > Create-iOS-icons / Create-macOS-icons
+1. Open Photoshop CC (may require restart if open during install)
+2. Select script from `File > Scripts` menu
 3. Follow the dialog prompts
 4. :tada: :beer:
 
