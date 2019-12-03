@@ -1,9 +1,25 @@
 #!/bin/bash
 
-VERSION=2019
+VERSIONS=(
+  'CC 2019'
+  '2020'
+)
 
-echo "Copying scripts to /Applications/Adobe Photoshop CC $VERSION/Preset/Scripts/...."
+for v in "${VERSIONS[@]}";do
+  VERSION=$v
+  DIR="/Applications/Adobe Photoshop $VERSION/Presets/Scripts/"
+  if [[ -d $DIR ]];then
+    break
+  fi
+done
 
-cp *.jsx /Applications/Adobe\ Photoshop\ CC\ $VERSION/Presets/Scripts/
+if [[ ! -d $DIR ]];then
+  echo "ERROR: Could not find Photoshop directory"
+  exit 1
+fi
+
+echo "Copying scripts to $DIR ..."
+
+cp *.jsx "$DIR"
 
 echo "Done! 🎉"
