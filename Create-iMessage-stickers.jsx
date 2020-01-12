@@ -51,7 +51,7 @@ function main() {
 	var saveForWeb = new ExportOptionsSaveForWeb();
 	saveForWeb.format = SaveDocumentType.PNG;
 	saveForWeb.PNG8 = false;
-	saveForWeb.transparency = true;
+	saveForWeb.transparency = false;
 
 	//	delete metadata
 	doc.info = null;
