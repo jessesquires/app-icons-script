@@ -89,7 +89,7 @@ function main() {
 
 		{"name": "Icon-120", "size":120},
 
-		{"name": "Icon-83-5@2x", "size":167},
+		{"name": "Icon-83.5@2x", "size":167},
 	];
 
 	var initialState = doc.activeHistoryState;
