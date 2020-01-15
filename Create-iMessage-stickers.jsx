@@ -4,7 +4,7 @@
 
 	See included README and LICENSE for details.
 
-	Modifications 
+	Modifications
 		Copyright (c) 2014 Jesse Squires
 		Copyright (c) 2012 Josh Jones
 
@@ -20,7 +20,7 @@ var initialPrefs = app.preferences.rulerUnits;
 function main() {
 	//	prompt user to select source file, cancel returns null
 	var sourceFile = File.openDialog("Select a 1:1 sqaure PNG file that is at least 618x618.", "*.png", false);
-	if (sourceFile == null)  { 
+	if (sourceFile == null)  {
 		// user canceled
 		return;
 	}
@@ -55,14 +55,14 @@ function main() {
 
 	//	delete metadata
 	doc.info = null;
-	
+
 	var icons = [
-		{"name": "sticker-100@3x", "size":300},
-		{"name": "sticker-136@3x", "size":408},
-		{"name": "sticker-206@3x", "size":618},
+		{"name": "sticker_100@3x", "size":300},
+		{"name": "sticker_136@3x", "size":408},
+		{"name": "sticker_206@3x", "size":618},
 	];
 
-	var initialState = doc.activeHistoryState; 
+	var initialState = doc.activeHistoryState;
 
 	for (var i = 0; i < icons.length; i++) {
 		var eachIcon = icons[i];
@@ -82,10 +82,10 @@ function main() {
 		doc.activeHistoryState = initialState;
 	}
 
-	alert("Success!\nAll iOS icons created and saved. Fuck yeah. 🎉 🍺");
+	alert("Success!\nAll iOS icons created and saved. Fuck yeah.");
 
 	doc.close(SaveOptions.DONOTSAVECHANGES);
-	
+
 	restorePrefs();
 }
 

@@ -58,22 +58,22 @@ function main() {
 
 	var icons = [
 		// Home screen
-		{"name": "Icon-40@2x", "size":80},
-		{"name": "Icon-44@2x", "size":88},
-		{"name": "Icon-50@2x", "size":100},
+		{"name": "icon_40@2x", "size":80},
+		{"name": "icon_44@2x", "size":88},
+		{"name": "icon_50@2x", "size":100},
 		// Notification center
-		{"name": "Icon-24@2x", "size":48},
-		{"name": "Icon-27.5@2x", "size":55},
-		{"name": "Icon-29@2x", "size":58},
+		{"name": "icon_24@2x", "size":48},
+		{"name": "icon_27.5@2x", "size":55},
+		{"name": "icon_29@2x", "size":58},
 		// Short-look
-		{"name": "Icon-86@2x", "size":172},
-		{"name": "Icon-98@2x", "size":196},
-		{"name": "Icon-108@2x", "size":216},
+		{"name": "icon_86@2x", "size":172},
+		{"name": "icon_98@2x", "size":196},
+		{"name": "icon_108@2x", "size":216},
 		// Companion
-		// {"name": "Icon-29@2x", "size":58}, Duplicate of notification center
-		{"name": "Icon-29@3x", "size":87},
+		// {"name": "icon_29@2x", "size":58}, Duplicate of notification center
+		{"name": "icon_29@3x", "size":87},
 		// App store
-		{"name": "Icon-1024", "size":1024},
+		{"name": "icon_1024", "size":1024},
 	];
 
 	var initialState = doc.activeHistoryState;
@@ -91,7 +91,7 @@ function main() {
 		doc.activeHistoryState = initialState;
 	}
 
-	alert("Success!\nAll iOS icons created and saved. Fuck yeah. 🎉 🍺");
+	alert("Success!\nAll iOS icons created and saved. Fuck yeah.");
 
 	doc.close(SaveOptions.DONOTSAVECHANGES);
 

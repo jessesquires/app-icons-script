@@ -57,20 +57,20 @@ function main() {
 	doc.info = null;
 
 	var icons = [
-        {"name": "Icon-512@2x", "size":1024},
-        {"name": "Icon-512", "size":512},
+        {"name": "icon_512@2x", "size":1024},
+        {"name": "icon_512", "size":512},
 
-        {"name": "Icon-256@2x", "size":512},
-        {"name": "Icon-256", "size":256},
+        {"name": "icon_256@2x", "size":512},
+        {"name": "icon_256", "size":256},
 
-        {"name": "Icon-128@2x", "size":256},
-        {"name": "Icon-128", "size":128},
+        {"name": "icon_128@2x", "size":256},
+        {"name": "icon_128", "size":128},
 
-        {"name": "Icon-32@2x", "size":64},
-        {"name": "Icon-32", "size":32},
+        {"name": "icon_32@2x", "size":64},
+        {"name": "icon_32", "size":32},
 
-        {"name": "Icon-16@2x", "size":32},
-        {"name": "Icon-16", "size":16},
+        {"name": "icon_16@2x", "size":32},
+        {"name": "icon_16", "size":16},
 	];
 
 	var initialState = doc.activeHistoryState;
@@ -88,7 +88,7 @@ function main() {
 		doc.activeHistoryState = initialState;
 	}
 
-	alert("Success!\nAll macOS icons created and saved. Fuck yeah. 🎉 🍺");
+	alert("Success!\nAll macOS icons created and saved. Fuck yeah.");
 
 	doc.close(SaveOptions.DONOTSAVECHANGES);
 

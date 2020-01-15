@@ -4,7 +4,7 @@
 
 	See included README and LICENSE for details.
 
-	Modifications 
+	Modifications
 		Copyright (c) 2014 Jesse Squires
 		Copyright (c) 2012 Josh Jones
 
@@ -20,7 +20,7 @@ var initialPrefs = app.preferences.rulerUnits;
 function main() {
 	//	prompt user to select source file, cancel returns null
 	var sourceFile = File.openDialog("Select a PNG file that is 1024x768.", "*.png", false);
-	if (sourceFile == null)  { 
+	if (sourceFile == null)  {
 		// user canceled
 		return;
 	}
@@ -55,34 +55,34 @@ function main() {
 
 	//	delete metadata
 	doc.info = null;
-	
+
 	var icons = [
 	   {"name": "icon", "w":1024, "h":768},
-        
+
 	   {"name": "messages", "w":27, "h":20},
 	   {"name": "messages@2x", "w":54, "h":40},
 	   {"name": "messages@3x", "w":81, "h":60},
-        
+
 	   {"name": "messages-2", "w":32, "h":24},
 	   {"name": "messages-2@2x", "w":64, "h":48},
 	   {"name": "messages-2@3x", "w":96, "h":72},
-        
+
 	   {"name": "iphone-settings@2x", "w":58, "h":58},
 	   {"name": "iphone-settings@3x", "w":87, "h":87},
-        
+
 	   {"name": "iphone@2x", "w":120, "h":90},
 	   {"name": "iphone@3x", "w":180, "h":135},
-        
+
        {"name": "ipad-settings", "w":29, "h":29},
 	   {"name": "ipad-settings@2x", "w":58, "h":58},
-        
+
 	   {"name": "ipad", "w":67, "h":50},
 	   {"name": "ipad@2x", "w":134, "h":100},
-        
+
 	   {"name": "ipad-pro@2x", "w":148, "h":110},
 	];
 
-	var initialState = doc.activeHistoryState; 
+	var initialState = doc.activeHistoryState;
 
 	for (var i = 0; i < icons.length; i++) {
 		var eachIcon = icons[i];
@@ -102,10 +102,10 @@ function main() {
 		doc.activeHistoryState = initialState;
 	}
 
-	alert("Success!\nAll iOS icons created and saved. Fuck yeah. 🎉 🍺");
+	alert("Success!\nAll iOS icons created and saved. Fuck yeah.");
 
 	doc.close(SaveOptions.DONOTSAVECHANGES);
-	
+
 	restorePrefs();
 }
 
