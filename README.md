@@ -31,6 +31,28 @@ $ [sudo] ./install.sh
 
 This script **does not handle naming collisions**, it will overwrite any existing files with the same names in the destination directory.
 
+## Additional script for Asset Catalog Creation.
+
+An additional bash script has been added that you can use to take the output from either the iOS or watchOS photoshop script, and create a complete AppIcon asset catalog, ready to import directly into your Xcode project.
+
+So, once you've run the photoshop script to create your iOS or watchOS icons, you can create an asset catalog like this:
+
+** iOS Asset Catalog **
+
+Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `iosicons`), and the script is in the same directory:
+
+`./createIconCatalog.sh iosicons . phoneAppIcon ios`
+
+This will create an asset catalog called `phoneAppIcon.xcassets` in the same directory, having copied all of the icons into the right place, and generating the appropriate JSON files.
+
+** watchOS Asset Catalog **
+
+Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `watchosicons`), and the script is in the same directory:
+
+`./createIconCatalog.sh watchosicons . watchAppIcon watch`
+
+This will create an asset catalog called `watchAppIcon.xcassets` in the same directory, having copied all of the icons into the right place, and generating the appropriate JSON files.
+
 ## Documentation
 
 * Adobe [Photoshop JavaScript Reference](http://www.adobe.com/devnet/photoshop/scripting.html)
