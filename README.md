@@ -31,27 +31,21 @@ $ [sudo] ./install.sh
 
 This script **does not handle naming collisions**, it will overwrite any existing files with the same names in the destination directory.
 
-## Additional script for Asset Catalog Creation.
+## Generating Asset Catalogs
 
-An additional bash script has been added that you can use to take the output from either the iOS or watchOS photoshop script, and create a complete AppIcon asset catalog, ready to import directly into your Xcode project.
+This repo also contains a script to generate asset catalogs (`genAssetCatalog.sh`) using the output from the Photoshop scripts. It can create a complete AppIcon asset catalog for iOS or watchOS that is ready to import directly into your Xcode project.
 
-So, once you've run the photoshop script to create your iOS or watchOS icons, you can create an asset catalog like this:
+The script should be executed with the following options:
 
-### iOS Asset Catalog
+```bash
+$ ./genAssetCatalog.sh <source path to icons> <destination path> <catalog name> [ios | watch]
+```
 
-Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `iosicons`), and the script is in the same directory:
+Example:
 
-`./createIconCatalog.sh iosicons . phoneAppIcon ios`
-
-This will create an asset catalog called `phoneAppIcon.xcassets` in the same directory, having copied all of the icons into the right place, and generating the appropriate JSON files.
-
-### watchOS Asset Catalog
-
-Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `watchosicons`), and the script is in the same directory:
-
-`./createIconCatalog.sh watchosicons . watchAppIcon watch`
-
-This will create an asset catalog called `watchAppIcon.xcassets` in the same directory, having copied all of the icons into the right place, and generating the appropriate JSON files.
+```bash
+$ ./genAssetCatalog.sh ~/Desktop/icons/ ~/Desktop/assets/ AppIcon ios
+```
 
 ## Documentation
 
