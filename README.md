@@ -31,6 +31,22 @@ $ [sudo] ./install.sh
 
 This script **does not handle naming collisions**, it will overwrite any existing files with the same names in the destination directory.
 
+## Generating Asset Catalogs
+
+This repo also contains a script to generate asset catalogs (`genAssetCatalog.sh`) using the output from the Photoshop scripts. It can create a complete AppIcon asset catalog for iOS or watchOS that is ready to import directly into your Xcode project.
+
+The script should be executed with the following options:
+
+```bash
+$ ./genAssetCatalog.sh <source path to icons> <destination path> <catalog name> [ios | watch]
+```
+
+Example:
+
+```bash
+$ ./genAssetCatalog.sh ~/Desktop/icons/ ~/Desktop/assets/ AppIcon ios
+```
+
 ## Documentation
 
 * Adobe [Photoshop JavaScript Reference](http://www.adobe.com/devnet/photoshop/scripting.html)
