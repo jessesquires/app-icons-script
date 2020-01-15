@@ -37,7 +37,7 @@ An additional bash script has been added that you can use to take the output fro
 
 So, once you've run the photoshop script to create your iOS or watchOS icons, you can create an asset catalog like this:
 
-** iOS Asset Catalog **
+### iOS Asset Catalog
 
 Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `iosicons`), and the script is in the same directory:
 
@@ -45,7 +45,7 @@ Assuming you're in the same directory as the directory containing the icons (whi
 
 This will create an asset catalog called `phoneAppIcon.xcassets` in the same directory, having copied all of the icons into the right place, and generating the appropriate JSON files.
 
-** watchOS Asset Catalog **
+### watchOS Asset Catalog
 
 Assuming you're in the same directory as the directory containing the icons (which, for this example, we've called `watchosicons`), and the script is in the same directory:
 
