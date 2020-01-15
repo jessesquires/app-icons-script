@@ -72,11 +72,11 @@ function createContents {
 # $4 = the name of the JSON file to which we append an entry for the file.
 function copyIOSAsset {
   if [ "${3}" == "ios-marketing" ]; then
-    filename="Icon-${1}.png"
+    filename="icon_${1}.png"
   elif [ "${2}" == "1x" ]; then
-  	filename="Icon-${1}.png"
+  	filename="icon_${1}.png"
   else
-    filename="Icon-${1}@${2}.png"
+    filename="icon_${1}@${2}.png"
   fi
 
   if [ -f "${ASSET_SOURCEPATH}/${filename}" ]; then
@@ -104,11 +104,11 @@ function copyIOSAsset {
 # $6 = the name of the JSON file to which we append an entry for the file.
 function copyWatchAsset {
   if [ "${3}" == "watch-marketing" ]; then
-    filename="Icon-${1}.png"
+    filename="icon_${1}.png"
   elif [ "${2}" == "1x" ]; then
-  	filename="Icon-${1}.png"
+  	filename="icon_${1}.png"
   else
-    filename="Icon-${1}@${2}.png"
+    filename="icon_${1}@${2}.png"
   fi
 
   if [ -f "${ASSET_SOURCEPATH}/${filename}" ]; then
