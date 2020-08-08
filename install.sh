@@ -5,17 +5,15 @@ COMPATIBLE_VERSIONS=(
   '2020'
 )
 
-matched=false
 valid_dirs=()
 for version in "${COMPATIBLE_VERSIONS[@]}"; do
   DIR="/Applications/Adobe Photoshop ${version}/Presets/Scripts/"
   if [[ -d $DIR ]];then
-    matched=true
     valid_dirs+=("$DIR")
   fi
 done
 
-if [ $matched == false ];then
+if [ ${#valid_dirs[@]} == 0 ];then
   echo "ERROR: Could not find a compatible Photoshop directory"
   exit 1
 fi
