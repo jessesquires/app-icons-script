@@ -3,6 +3,7 @@
 COMPATIBLE_VERSIONS=(
   'CC 2019'
   '2020'
+  '2021'
 )
 
 valid_dirs=()
